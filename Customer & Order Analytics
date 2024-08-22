@@ -71,7 +71,7 @@ AND orderid <> 'Order ID'
 
 # List all the products sold in Los Angeles in February, and include how many of each were sold.
 
-SELECT distinct product, 
+SELECT product, 
 SUM(quantity) AS total_sold
 FROM BIT_DB.FebSales
 WHERE location like '%Los Angeles%'
